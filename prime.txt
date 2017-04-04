@@ -1,1 +1,4 @@
-prime.txt
+The function has a nested for loop which uses the range() function. 
+A range function Big O of n
+
+T=O(n^2)
