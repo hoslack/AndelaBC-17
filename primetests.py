@@ -11,6 +11,18 @@ class PrimeTests(unittest.TestCase):
         result = primenumber(10)
         self.assertTrue(result, list)
 
+    def test_integer(self):
+        result = primenumber(str)
+        self.assertTrue(result, TypeError)
+
+    def test_negative(self):
+        result = primenumber(-98)
+        self.assertTrue(result, ValueError)
+
+    def test_large_number(self):
+        result = primenumber(100000)
+        self.assertTrue(result, ValueError)
+
 
 if __name__ == '__main__':
     unittest.main()
