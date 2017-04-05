@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- 
 import re
 from collections import Counter
 
@@ -11,3 +12,4 @@ def words(sentence):
         words = words.split()
         result = dict((x, words.count(x)) for x in set(words))
         return result
+print words('hello  world')
